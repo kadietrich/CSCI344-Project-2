@@ -1,5 +1,33 @@
-.container {
+body {
+  background: #999999;
+}
+.container {  
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+.tweet{
+  background: #ffffff;
+  border: 4px solid blue;
+  min-height: 50px;
+}
+.tweet img{
+  float: left;
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+}
+p.tweet{
+  font-family: 'Droid Sans', sans-serif;
+  text-align: left;
+  padding: 5px;
+}
+#search_form {
+  text-align: center;
+}
+#search_form_input {
+  display: inline;
+}
+#results {
+  display: none;
 }
