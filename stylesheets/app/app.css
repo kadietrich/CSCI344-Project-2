@@ -24,10 +24,17 @@ p.tweet{
 }
 #search_form {
   text-align: center;
+  
 }
-#search_form_input {
-  display: inline;
+#search_input {
+  font-family: 'Droid Sans', sans-serif;
+}
+#search_input_button {
+  font-family: 'Droid Sans', sans-serif;
 }
 #results {
+  display: none;
+}
+#tweetCounter {
   display: none;
 }
