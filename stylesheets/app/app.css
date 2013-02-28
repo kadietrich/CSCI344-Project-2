@@ -1,8 +1,18 @@
 body {
   background: #999999;
 }
+h1 {
+  font-size: 150%;
+  font-family: 'Droid Sans', sans-serif;
+}
+.counter {
+  text-align: center;
+  padding: 5px;
+  font-family: 'Droid Sans', sans-serif;
+}
 .container {  
   width: 800px;
+  margin-top: 200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -23,14 +33,16 @@ p.tweet{
   padding: 5px;
 }
 #search_form {
-  text-align: center;
-  
+  text-align: center;  
 }
 #search_input {
   font-family: 'Droid Sans', sans-serif;
 }
 #search_input_button {
   font-family: 'Droid Sans', sans-serif;
+}
+#results_header {
+  text-align: center;
 }
 #results {
   display: none;
