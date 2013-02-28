@@ -12,20 +12,21 @@
                         .prependTo('#results')
                         .fadeIn(500)
                         .slideDown(50);
-                    $('#results p:gt(4)').fadeOut(500, function () { $(this).remove(); });
+                    $('#results p:gt(2)').fadeOut(500, function () { $(this).remove(); });
                     count += 1;
-                    $('#tweetCounter').html($("<p class='counter'>Tweets seen: " + count + "</p>"));
+                    $('#tweet_counter').html($("<p class='counter'>Tweets seen: " + count + "</p>"));
                 });
             });
         };
         $('#search_input').val("Enter a search term");
         $('#search_input_button').click(function () {
+            $('.perspective').shadow('perspective');
             twitterFunction($("#search_input").val());
             var term = $('#search_input').val();
-            $('#results_header').html("<h1>Tweets about: " + term + "</h1>");
+            $('#results_header').html("<h2>Tweets about: " + term + "</h2>");
             $('#search_form').fadeOut(500, function () {
                 $('#results').fadeIn(500);
-                $('#tweetCounter').fadeIn(500);
+                $('#tweet_counter').fadeIn(500);
             });
         });
     };
